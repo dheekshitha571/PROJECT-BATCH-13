@@ -11,11 +11,12 @@
         * {
             padding: 0;
             margin: 0;
-        }
+          }
  
         /* Styling the background image by
         giving its url and position */
-        .container {
+        .container 
+        {
             height: 100vh;
             width: 100%;
             background-image: url('./back.jpg');
@@ -28,14 +29,16 @@
  
         /* Styling the list tags to the
         right of the navigation bar */
-        .nav li {
+        .nav li 
+        {
             float: right;
             list-style: none;
         }
  
         /* Styling the anchor tags of
         the navigation bar */
-        .nav a {
+        .nav a 
+        {
             list-style: none;
             height: 50px;
             line-height: 50px;
@@ -49,7 +52,8 @@
  
         /* Giving position and margin
         to the content-div */
-        .content {
+        .content 
+        {
             width: 100%;
             position: absolute;
             top: 45%;
@@ -57,19 +61,22 @@
  
         /* Styling the left-col by
         giving margin */
-        .left-col {
+        .left-col 
+        {
             margin-left: 1%;
         }
  
         /* Styling the my sound placed
         in the left-col */
-        .left-col h5 {
+        .left-col h5 
+        {
             font-size: 25px;
             color:white;
         }
  
         /* Styling the right-col */
-        .right-col {
+        .right-col 
+        {
             float: right;
             margin-right: 10%;
             margin-top: -5%;
@@ -78,7 +85,8 @@
         }
  
         /* Styling the text in the right-col */
-        .right-col p {
+        .right-col p 
+        {
             font-size: 20px;
             color:white;
             font-weight: 650;
@@ -87,22 +95,22 @@
  
         /* Styling the cursor type
         of the icon to pointer */
-        #icon {
+        #icon 
+        {
             cursor: pointer;
         }
         @media only screen and (min-width: 320px) and (max-width:480px)
-{
-    .container{
-        display: flex;
-        flex-direction: column;
-    }
-    .container>.content{
-        width: 90%;
-    }
-    
-}
-
-
+        {
+            .container
+            {
+                display: flex;
+                flex-direction: column;
+            }
+            .container>.content
+            {
+                width: 90%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -122,11 +130,7 @@
         </div>
  
         <div class="right-col">
-             
- 
-<p>Don't think<br>Don't judge <br> Just Listen</p>
- 
- 
+            <p>Don't think<br>Don't judge <br> Just Listen</p>
             <img src="./play.jpg" id="icon">
         </div>
     </div>
@@ -141,14 +145,18 @@
  
         // Creating a function that will change
         // pause to play and vice-versa
-        icon.onclick = function() {
-            if (mysound.paused) {
+        icon.onclick = function() 
+        {
+            if (mysound.paused) 
+            {
  
                 // If paused then play the
                 // music and change the image
                 mysound.play();
                 icon.src ="./pause.jpg";
-            } else {
+            } 
+            else 
+            {
  
                 // If playing then pause the
                 // music and change the image
@@ -157,6 +165,5 @@
             }
         }
     </script>
-    
 </body>
 </html>
