@@ -11,8 +11,6 @@ giving its url and position */
     height: 100vh;
     width: 100%;
     background-image: url('./background.jfif');
-     
-    /* Image used: */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -100,7 +98,7 @@ of the icon to pointer */
     height: 100px;
     width: 100px;
 }
-@media screen and (mix-width: 800px) 
+@media screen and (max-width: 500px) 
 {
     .container,.content,.left-col,.right-col,.nav
     {
