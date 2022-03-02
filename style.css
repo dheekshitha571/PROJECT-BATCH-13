@@ -98,10 +98,25 @@ of the icon to pointer */
     height: 100px;
     width: 100px;
 }
-@media screen and (max-width: 500px) 
+@media only screen and (max-width:500px) 
 {
+    /* for mobile phones */
     .container,.content,.left-col,.right-col,.nav
     {
         width: 100%;
     }
 }
+@media only screen and (max-width:800px) 
+{
+    /* for tablets */
+    .container
+    {
+        width: 80%;
+        padding:0;
+    }
+    .content
+    {
+        width: 100%;
+    }
+}
+
